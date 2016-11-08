@@ -6,11 +6,11 @@ Used for educational purposes only. Simply updating offsets and compiling WILL g
 
 ![OW](https://i.gyazo.com/907d5e403becd22b1bc5588d02111775.jpg)
 
-### Features
-- Functional Menu
-- Aimbot
-- ESP
+## Features
+* Functional Menu
+* Aimbot
+* ESP
 
-### Issues
-- Offsets outdated
-- No proper rigging for aimbot
+## Issues
+* Offsets outdated
+* No proper rigging for aimbot
