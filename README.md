@@ -4,7 +4,7 @@
 
 External OW Cheat src.
 
-Used for educational purposes only.
+Used for educational purposes only. Simply updating offsets and compiling WILL get your account flagged and banned.
 
 ### Features
 - Functional Menu
