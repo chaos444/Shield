@@ -10,10 +10,6 @@
 //This file has been online for quite a while so credits should be shared but im using this from NubTIK
 //So Credits to him and thanks
  
-
-
-
-
 class CHackProcess
 {
 public:
@@ -49,7 +45,7 @@ public:
 			memcpy((void *)pEntry, (void *)&__ProcessEntry, sizeof(PROCESSENTRY32));
 		        CloseHandle(hSnapshot);
 				Open(__ProcessEntry.th32ProcessID);
-            return __ProcessEntry.th32ProcessID;//·µ»Ø½ø³ÌID
+            return __ProcessEntry.th32ProcessID;//ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ID
         }} while (Process32Next(hSnapshot, &__ProcessEntry));
         CloseHandle(hSnapshot);
         return 0;
@@ -74,9 +70,7 @@ public:
 		CloseHandle(hSnapShot);
 		return NULL;
 	}
-
-
-
+	
 	template <class T> T Read(INT64 dwAddress)
 	{
 		T value;
@@ -98,15 +92,6 @@ public:
 		return (address >= 0x400000 && address < 0x000F000000000000);
 	}
 
-
-
-
-
-
-
-
-
- 
 	DWORD_PTR dwGetModuleBaseAddress(DWORD dwProcID, TCHAR *szModuleName)
 	{
 		DWORD_PTR dwModuleBaseAddress = 0;
@@ -208,17 +193,3 @@ public:
 
 	}
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
