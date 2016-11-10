@@ -4,7 +4,7 @@ An external OW Cheat src.
 
 Used for educational purposes only. Simply updating offsets and compiling WILL get your account flagged and banned.
 
-![OW](ScreenShots\TEST1.jpg)
+![OW](ScreenShots/TEST1.jpg)
 
 ## Features
 * Functional Menu
