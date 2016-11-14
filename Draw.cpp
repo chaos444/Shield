@@ -375,15 +375,15 @@ void MyHealthButton::MyCreateButton(int X, int Y, int W, int H,
   DrawLine(MyButtonX + 62, MyButtonY + 8, MyButtonX + 53, MyButtonY + 14,
            D2D1::ColorF::White, 3);
   if (MyButtonSelect) {
-    DrawRenderText(MyButtonX + 22, Y + (H / 5) + 2, "��", D2D1::ColorF::Black,
+    DrawRenderText(MyButtonX + 22, Y + (H / 5) + 2, "LOCK ON", D2D1::ColorF::Black,
                    pTextFormatSimSun);
-    DrawRenderText(MyButtonX + 24, Y + (H / 5), "��", D2D1::ColorF::White,
+    DrawRenderText(MyButtonX + 24, Y + (H / 5), "Offset 2", D2D1::ColorF::White,
                    pTextFormatSimSun);
   }
   if (!MyButtonSelect) {
-    DrawRenderText(MyButtonX + 22, Y + (H / 5) + 2, "��", D2D1::ColorF::Black,
+    DrawRenderText(MyButtonX + 22, Y + (H / 5) + 2, "Offset 3", D2D1::ColorF::Black,
                    pTextFormatSimSun);
-    DrawRenderText(MyButtonX + 24, Y + (H / 5), "��", D2D1::ColorF::White,
+    DrawRenderText(MyButtonX + 24, Y + (H / 5), "Offset 4", D2D1::ColorF::White,
                    pTextFormatSimSun);
   }
 }
@@ -421,7 +421,7 @@ void MyAimBotHeight::MyCreateButton(int X, int Y, int W, int H,
   DrawLine(MyButtonX + MyButtonW / 2, MyButtonY + 64, MyButtonX + MyButtonW - 2,
            MyButtonY + 53, D2D1::ColorF::White, 2.5);
   char A[100];
-  sprintf_s(A, "�����߶�: %d", MyHeightInt);
+  sprintf_s(A, "Location: %d", MyHeightInt);
   DrawRenderText(MyButtonX - 83, MyButtonY + 19, A, D2D1::ColorF::White,
                  pTextFormatSimSun);
 }
@@ -459,21 +459,21 @@ void MyAimBotKey::MyCreateButton(int X, int Y, int W, int H, D3DCOLOR Color) {
            MyButtonY + 53, D2D1::ColorF::White, 2.5);
   char A[100];
   if (MyHeightInt == 1) {
-    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "������: ����",
+    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "On",
                    D2D1::ColorF::White, pTextFormatSimSun);
     return;
   }
   if (MyHeightInt == 2) {
-    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "������: �Ҽ�",
+    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "ESP",
                    D2D1::ColorF::White, pTextFormatSimSun);
     return;
   }
   if (MyHeightInt == 4) {
-    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "������: �м�",
+    DrawRenderText(MyButtonX - 73, MyButtonY + 19, "Lock",
                    D2D1::ColorF::White, pTextFormatSimSun);
     return;
   }
-  sprintf_s(A, "������:  %d", MyHeightInt);
+  sprintf_s(A, "Offset:  %d", MyHeightInt);
   DrawRenderText(MyButtonX - 73, MyButtonY + 19, A, D2D1::ColorF::White,
                  pTextFormatSimSun);
 }
@@ -517,7 +517,7 @@ void MyAimBotSpeed::MyCreateButton(int X, int Y, int W, int H, D3DCOLOR Color) {
   DrawLine(MyButtonX + MyButtonW / 2, MyButtonY + 64, MyButtonX + MyButtonW - 2,
            MyButtonY + 53, D2D1::ColorF::White, 2.5);
   char A[100];
-  sprintf_s(A, "ƽ���ٶ�:  %d", MyHeightInt);
+  sprintf_s(A, "Height offset:  %d", MyHeightInt);
   DrawRenderText(MyButtonX - 85, MyButtonY + 19, A, D2D1::ColorF::White,
                  pTextFormatSimSun);
 }

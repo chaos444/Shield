@@ -32,24 +32,15 @@ public:
 	void MyCreateRadio(int X, int Y, int W, int H, D3DCOLOR Color, const char* Text);
 	void MyRadioClick(POINT MousePoint);
 	bool MyRadioSelect;
-
-	
-
 };
 class MyMenu
 {
 public:
 	bool DragMenu = false;
 	bool MyMenuHideShow = true;
-
-
 	int MyMenuX, MyMenuY, MyMenuW, MyMenuH;
 	void MyCreateMenu(POINT MenuPoint, int W, int H, D3DCOLOR Color, const char* Text);
 	void MyClickPoint(POINT MousePoint);
-
-
-
-	
 
 };
 class MyHealthButton
